@@ -4,7 +4,7 @@ services:
     container_name: discord-twitter-webhooks
     user: "1000:1000"
     ports:
-      - 8000:8000
+      - 8010:8000
     volumes:
       - ./data/discord-twitter-webhooks:/home/botuser/.local/share/discord_twitter_webhooks
     restart: unless-stopped

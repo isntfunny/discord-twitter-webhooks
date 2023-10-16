@@ -1,4 +1,9 @@
 services:
+  nitter: 
+    image: zedeus/nitter
+    container_name: nitter
+    volumes:
+      - ./nitter.conf:/src/nitter.conf
   discord-twitter-webhooks:
     build: 
       context: .

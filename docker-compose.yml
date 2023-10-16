@@ -1,6 +1,8 @@
 services:
   discord-twitter-webhooks:
-    image: thelovinator/discord-twitter-webhooks
+    build: 
+      context: .
+      dockerfile: Dockerfile
     container_name: discord-twitter-webhooks
     user: "1000:1000"
     ports:
